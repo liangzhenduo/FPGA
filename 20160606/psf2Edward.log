@@ -1,0 +1,81 @@
+
+Checking platform configuration ...
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 5 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+WARNING:EDK - PORT: bscan_tdo1, CONNECTOR: bscan_tdo1 - No driver found. Port
+   will be driven to GND -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\dat
+   a\mdm_v2_1_0.mpd line 230 
+WARNING:EDK - PORT: bscan_tdi, CONNECTOR: bscan_tdi - floating connection -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\dat
+   a\mdm_v2_1_0.mpd line 223 
+WARNING:EDK - PORT: bscan_reset, CONNECTOR: bscan_reset - floating connection -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\dat
+   a\mdm_v2_1_0.mpd line 224 
+WARNING:EDK - PORT: bscan_shift, CONNECTOR: bscan_shift - floating connection -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\dat
+   a\mdm_v2_1_0.mpd line 225 
+WARNING:EDK - PORT: bscan_update, CONNECTOR: bscan_update - floating connection
+   -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\dat
+   a\mdm_v2_1_0.mpd line 226 
+WARNING:EDK - PORT: bscan_capture, CONNECTOR: bscan_capture - floating
+   connection -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\dat
+   a\mdm_v2_1_0.mpd line 227 
+WARNING:EDK - PORT: bscan_sel1, CONNECTOR: bscan_sel1 - floating connection -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\dat
+   a\mdm_v2_1_0.mpd line 228 
+WARNING:EDK - PORT: bscan_drck1, CONNECTOR: bscan_drck1 - floating connection -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\dat
+   a\mdm_v2_1_0.mpd line 229 
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Did not find device sumary in axi4lite_0's synthesis log file
+Did not find timing summary in axi4lite_0's synthesis log file
+Did not find device sumary in microblaze_0's synthesis log file
+Did not find timing summary in microblaze_0's synthesis log file
+Did not find device sumary in microblaze_0_ilmb's synthesis log file
+Did not find timing summary in microblaze_0_ilmb's synthesis log file
+Did not find device sumary in microblaze_0_dlmb's synthesis log file
+Did not find timing summary in microblaze_0_dlmb's synthesis log file
+Did not find device sumary in microblaze_0_i_bram_ctrl's synthesis log file
+Did not find timing summary in microblaze_0_i_bram_ctrl's synthesis log file
+Did not find device sumary in microblaze_0_d_bram_ctrl's synthesis log file
+Did not find timing summary in microblaze_0_d_bram_ctrl's synthesis log file
+Did not find device sumary in microblaze_0_bram_block's synthesis log file
+Did not find timing summary in microblaze_0_bram_block's synthesis log file
+Did not find device sumary in proc_sys_reset_0's synthesis log file
+Did not find timing summary in proc_sys_reset_0's synthesis log file
+Did not find device sumary in clock_generator_0's synthesis log file
+Did not find timing summary in clock_generator_0's synthesis log file
+Did not find device sumary in debug_module's synthesis log file
+Did not find timing summary in debug_module's synthesis log file
+Did not find device sumary in RS232_Uart_1's synthesis log file
+Did not find timing summary in RS232_Uart_1's synthesis log file
+Did not find device sumary in DIP_Switches_8Bits's synthesis log file
+Did not find timing summary in DIP_Switches_8Bits's synthesis log file
+Did not find device sumary in Push_Buttons_4Bits's synthesis log file
+Did not find timing summary in Push_Buttons_4Bits's synthesis log file
+Did not find device sumary in LED_8Bits's synthesis log file
+Did not find timing summary in LED_8Bits's synthesis log file
+Conversion to XML complete.

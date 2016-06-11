@@ -1,0 +1,5 @@
+verilog work "vga_initials.v"
+verilog work "vga_640x480.v"
+verilog work "ipcore_dir/loons240x160.v"
+verilog work "clkdiv.v"
+verilog work "vga_640x480_picture_top.v"

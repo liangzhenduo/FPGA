@@ -1,0 +1,114 @@
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 lcd.ngc lcd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_map.ncd lcd.ngd lcd.pcf 
+par -w -intstyle ise -ol high -mt off lcd_map.ncd lcd.ncd lcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd.twx lcd.ncd -o lcd.twr lcd.pcf 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd.ucf -p xc6slx16-csg324-3 lcd.ngc lcd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_map.ncd lcd.ngd lcd.pcf 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_map.ncd lcd.ngd lcd.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd.ucf -p xc6slx16-csg324-3 lcd.ngc lcd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_map.ncd lcd.ngd lcd.pcf 
+par -w -intstyle ise -ol high -mt off lcd_map.ncd lcd.ncd lcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd.twx lcd.ncd -o lcd.twr lcd.pcf -ucf lcd.ucf 
+bitgen -intstyle ise -f lcd.ut lcd.ncd 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd.ucf -p xc6slx16-csg324-3 lcd.ngc lcd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_map.ncd lcd.ngd lcd.pcf 
+par -w -intstyle ise -ol high -mt off lcd_map.ncd lcd.ncd lcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd.twx lcd.ncd -o lcd.twr lcd.pcf -ucf lcd.ucf 
+bitgen -intstyle ise -f lcd.ut lcd.ncd 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd.ucf -p xc6slx16-csg324-3 lcd.ngc lcd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_map.ncd lcd.ngd lcd.pcf 
+par -w -intstyle ise -ol high -mt off lcd_map.ncd lcd.ncd lcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd.twx lcd.ncd -o lcd.twr lcd.pcf -ucf lcd.ucf 
+bitgen -intstyle ise -f lcd.ut lcd.ncd 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd.ucf -p xc6slx16-csg324-3 lcd.ngc lcd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_map.ncd lcd.ngd lcd.pcf 
+par -w -intstyle ise -ol high -mt off lcd_map.ncd lcd.ncd lcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd.twx lcd.ncd -o lcd.twr lcd.pcf -ucf lcd.ucf 
+bitgen -intstyle ise -f lcd.ut lcd.ncd 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd.ucf -p xc6slx16-csg324-3 lcd.ngc lcd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_map.ncd lcd.ngd lcd.pcf 
+par -w -intstyle ise -ol high -mt off lcd_map.ncd lcd.ncd lcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd.twx lcd.ncd -o lcd.twr lcd.pcf -ucf lcd.ucf 
+bitgen -intstyle ise -f lcd.ut lcd.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd.ucf -p xc6slx16-csg324-3 lcd.ngc lcd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_map.ncd lcd.ngd lcd.pcf 
+par -w -intstyle ise -ol high -mt off lcd_map.ncd lcd.ncd lcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd.twx lcd.ncd -o lcd.twr lcd.pcf -ucf lcd.ucf 
+bitgen -intstyle ise -f lcd.ut lcd.ncd 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd.ucf -p xc6slx16-csg324-3 lcd.ngc lcd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_map.ncd lcd.ngd lcd.pcf 
+par -w -intstyle ise -ol high -mt off lcd_map.ncd lcd.ncd lcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd.twx lcd.ncd -o lcd.twr lcd.pcf -ucf lcd.ucf 
+bitgen -intstyle ise -f lcd.ut lcd.ncd 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd.ucf -p xc6slx16-csg324-3 lcd.ngc lcd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_map.ncd lcd.ngd lcd.pcf 
+par -w -intstyle ise -ol high -mt off lcd_map.ncd lcd.ncd lcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd.twx lcd.ncd -o lcd.twr lcd.pcf -ucf lcd.ucf 
+bitgen -intstyle ise -f lcd.ut lcd.ncd 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd.ucf -p xc6slx16-csg324-3 lcd.ngc lcd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_map.ncd lcd.ngd lcd.pcf 
+par -w -intstyle ise -ol high -mt off lcd_map.ncd lcd.ncd lcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd.twx lcd.ncd -o lcd.twr lcd.pcf -ucf lcd.ucf 
+netgen -intstyle ise -s 3  -pcf lcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim lcd.ncd lcd_timesim.v 
+bitgen -intstyle ise -f lcd.ut lcd.ncd 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd.ucf -p xc6slx16-csg324-3 lcd.ngc lcd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_map.ncd lcd.ngd lcd.pcf 
+par -w -intstyle ise -ol high -mt off lcd_map.ncd lcd.ncd lcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd.twx lcd.ncd -o lcd.twr lcd.pcf -ucf lcd.ucf 
+bitgen -intstyle ise -f lcd.ut lcd.ncd 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd.ucf -p xc6slx16-csg324-3 lcd.ngc lcd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_map.ncd lcd.ngd lcd.pcf 
+par -w -intstyle ise -ol high -mt off lcd_map.ncd lcd.ncd lcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd.twx lcd.ncd -o lcd.twr lcd.pcf -ucf lcd.ucf 
+bitgen -intstyle ise -f lcd.ut lcd.ncd 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd.ucf -p xc6slx16-csg324-3 lcd.ngc lcd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_map.ncd lcd.ngd lcd.pcf 
+par -w -intstyle ise -ol high -mt off lcd_map.ncd lcd.ncd lcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd.twx lcd.ncd -o lcd.twr lcd.pcf -ucf lcd.ucf 
+bitgen -intstyle ise -f lcd.ut lcd.ncd 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+xst -intstyle ise -ifn "C:/workspace/lcd/lcd.xst" -ofn "C:/workspace/lcd/lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd.ucf -p xc6slx16-csg324-3 lcd.ngc lcd.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_map.ncd lcd.ngd lcd.pcf 
+par -w -intstyle ise -ol high -mt off lcd_map.ncd lcd.ncd lcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lcd.twx lcd.ncd -o lcd.twr lcd.pcf -ucf lcd.ucf 
+bitgen -intstyle ise -f lcd.ut lcd.ncd 
+bitgen -intstyle ise -f lcd.ut lcd.ncd 

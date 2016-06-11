@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/seg7_s/seg7_s.xst" -ofn "D:/Work/FPGA/VLSI/seg7_s/seg7_s.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seg7_s.ucf -p xc6slx16-csg324-3 seg7_s.ngc seg7_s.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o seg7_s_map.ncd seg7_s.ngd seg7_s.pcf 
+par -w -intstyle ise -ol high -mt off seg7_s_map.ncd seg7_s.ncd seg7_s.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml seg7_s.twx seg7_s.ncd -o seg7_s.twr seg7_s.pcf -ucf seg7_s.ucf 
+bitgen -intstyle ise -f seg7_s.ut seg7_s.ncd 
+xst -intstyle ise -ifn "C:/FPGA/seg7_s/seg7_s.xst" -ofn "C:/FPGA/seg7_s/seg7_s.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seg7_s.ucf -p xc6slx16-csg324-3 seg7_s.ngc seg7_s.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o seg7_s_map.ncd seg7_s.ngd seg7_s.pcf 
+par -w -intstyle ise -ol high -mt off seg7_s_map.ncd seg7_s.ncd seg7_s.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml seg7_s.twx seg7_s.ncd -o seg7_s.twr seg7_s.pcf -ucf seg7_s.ucf 
+bitgen -intstyle ise -f seg7_s.ut seg7_s.ncd 

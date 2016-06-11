@@ -1,0 +1,113 @@
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.xst" -ofn "D:/Work/FPGA/VLSI/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 
+xst -intstyle ise -ifn "C:/FPGA/ram_16x8/ram_16x8.xst" -ofn "C:/FPGA/ram_16x8/ram_16x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ram_16x8.ucf -p xc6slx16-csg324-3 ram_16x8.ngc ram_16x8.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_16x8_map.ncd ram_16x8.ngd ram_16x8.pcf 
+par -w -intstyle ise -ol high -mt off ram_16x8_map.ncd ram_16x8.ncd ram_16x8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ram_16x8.twx ram_16x8.ncd -o ram_16x8.twr ram_16x8.pcf -ucf ram_16x8.ucf 
+bitgen -intstyle ise -f ram_16x8.ut ram_16x8.ncd 

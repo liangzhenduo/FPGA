@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\FPGA\vend\vend.ncd
+OUTFILE=C:\FPGA\vend\vend.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\FPGA\vend
+LICENSE=WebPack
+USER_INFO=__0_0_0

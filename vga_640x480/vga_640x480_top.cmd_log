@@ -1,0 +1,93 @@
+xst -intstyle ise -ifn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_640x480.ucf -p xc6slx16-csg324-3 vga_640x480_top.ngc vga_640x480_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_640x480_top_map.ncd vga_640x480_top.ngd vga_640x480_top.pcf 
+par -w -intstyle ise -ol high -mt off vga_640x480_top_map.ncd vga_640x480_top.ncd vga_640x480_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_640x480_top.twx vga_640x480_top.ncd -o vga_640x480_top.twr vga_640x480_top.pcf -ucf vga_640x480.ucf 
+bitgen -intstyle ise -f vga_640x480_top.ut vga_640x480_top.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.syr" 
+xst -intstyle ise -ifn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_640x480.ucf -p xc6slx16-csg324-3 vga_640x480_top.ngc vga_640x480_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_640x480_top_map.ncd vga_640x480_top.ngd vga_640x480_top.pcf 
+par -w -intstyle ise -ol high -mt off vga_640x480_top_map.ncd vga_640x480_top.ncd vga_640x480_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_640x480_top.twx vga_640x480_top.ncd -o vga_640x480_top.twr vga_640x480_top.pcf -ucf vga_640x480.ucf 
+bitgen -intstyle ise -f vga_640x480_top.ut vga_640x480_top.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_640x480.ucf -p xc6slx16-csg324-3 vga_640x480_top.ngc vga_640x480_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_640x480_top_map.ncd vga_640x480_top.ngd vga_640x480_top.pcf 
+par -w -intstyle ise -ol high -mt off vga_640x480_top_map.ncd vga_640x480_top.ncd vga_640x480_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_640x480_top.twx vga_640x480_top.ncd -o vga_640x480_top.twr vga_640x480_top.pcf -ucf vga_640x480.ucf 
+bitgen -intstyle ise -f vga_640x480_top.ut vga_640x480_top.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_640x480.ucf -p xc6slx16-csg324-3 vga_640x480_top.ngc vga_640x480_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_640x480_top_map.ncd vga_640x480_top.ngd vga_640x480_top.pcf 
+par -w -intstyle ise -ol high -mt off vga_640x480_top_map.ncd vga_640x480_top.ncd vga_640x480_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_640x480_top.twx vga_640x480_top.ncd -o vga_640x480_top.twr vga_640x480_top.pcf -ucf vga_640x480.ucf 
+bitgen -intstyle ise -f vga_640x480_top.ut vga_640x480_top.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_640x480.ucf -p xc6slx16-csg324-3 vga_640x480_top.ngc vga_640x480_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_640x480_top_map.ncd vga_640x480_top.ngd vga_640x480_top.pcf 
+par -w -intstyle ise -ol high -mt off vga_640x480_top_map.ncd vga_640x480_top.ncd vga_640x480_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_640x480_top.twx vga_640x480_top.ncd -o vga_640x480_top.twr vga_640x480_top.pcf -ucf vga_640x480.ucf 
+bitgen -intstyle ise -f vga_640x480_top.ut vga_640x480_top.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_640x480.ucf -p xc6slx16-csg324-3 vga_640x480_top.ngc vga_640x480_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_640x480_top_map.ncd vga_640x480_top.ngd vga_640x480_top.pcf 
+par -w -intstyle ise -ol high -mt off vga_640x480_top_map.ncd vga_640x480_top.ncd vga_640x480_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_640x480_top.twx vga_640x480_top.ncd -o vga_640x480_top.twr vga_640x480_top.pcf -ucf vga_640x480.ucf 
+bitgen -intstyle ise -f vga_640x480_top.ut vga_640x480_top.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_640x480.ucf -p xc6slx16-csg324-3 vga_640x480_top.ngc vga_640x480_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_640x480_top_map.ncd vga_640x480_top.ngd vga_640x480_top.pcf 
+par -w -intstyle ise -ol high -mt off vga_640x480_top_map.ncd vga_640x480_top.ncd vga_640x480_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_640x480_top.twx vga_640x480_top.ncd -o vga_640x480_top.twr vga_640x480_top.pcf -ucf vga_640x480.ucf 
+bitgen -intstyle ise -f vga_640x480_top.ut vga_640x480_top.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_640x480.ucf -p xc6slx16-csg324-3 vga_640x480_top.ngc vga_640x480_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_640x480_top_map.ncd vga_640x480_top.ngd vga_640x480_top.pcf 
+par -w -intstyle ise -ol high -mt off vga_640x480_top_map.ncd vga_640x480_top.ncd vga_640x480_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_640x480_top.twx vga_640x480_top.ncd -o vga_640x480_top.twr vga_640x480_top.pcf -ucf vga_640x480.ucf 
+bitgen -intstyle ise -f vga_640x480_top.ut vga_640x480_top.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_640x480.ucf -p xc6slx16-csg324-3 vga_640x480_top.ngc vga_640x480_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_640x480_top_map.ncd vga_640x480_top.ngd vga_640x480_top.pcf 
+par -w -intstyle ise -ol high -mt off vga_640x480_top_map.ncd vga_640x480_top.ncd vga_640x480_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_640x480_top.twx vga_640x480_top.ncd -o vga_640x480_top.twr vga_640x480_top.pcf -ucf vga_640x480.ucf 
+bitgen -intstyle ise -f vga_640x480_top.ut vga_640x480_top.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_640x480.ucf -p xc6slx16-csg324-3 vga_640x480_top.ngc vga_640x480_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_640x480_top_map.ncd vga_640x480_top.ngd vga_640x480_top.pcf 
+par -w -intstyle ise -ol high -mt off vga_640x480_top_map.ncd vga_640x480_top.ncd vga_640x480_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_640x480_top.twx vga_640x480_top.ncd -o vga_640x480_top.twr vga_640x480_top.pcf -ucf vga_640x480.ucf 
+bitgen -intstyle ise -f vga_640x480_top.ut vga_640x480_top.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_640x480.ucf -p xc6slx16-csg324-3 vga_640x480_top.ngc vga_640x480_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_640x480_top_map.ncd vga_640x480_top.ngd vga_640x480_top.pcf 
+par -w -intstyle ise -ol high -mt off vga_640x480_top_map.ncd vga_640x480_top.ncd vga_640x480_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_640x480_top.twx vga_640x480_top.ncd -o vga_640x480_top.twr vga_640x480_top.pcf -ucf vga_640x480.ucf 
+bitgen -intstyle ise -f vga_640x480_top.ut vga_640x480_top.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_640x480.ucf -p xc6slx16-csg324-3 vga_640x480_top.ngc vga_640x480_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_640x480_top_map.ncd vga_640x480_top.ngd vga_640x480_top.pcf 
+par -w -intstyle ise -ol high -mt off vga_640x480_top_map.ncd vga_640x480_top.ncd vga_640x480_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_640x480_top.twx vga_640x480_top.ncd -o vga_640x480_top.twr vga_640x480_top.pcf -ucf vga_640x480.ucf 
+bitgen -intstyle ise -f vga_640x480_top.ut vga_640x480_top.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/Digital_Logic_Design/Lab30/vga_640x480/vga_640x480_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_640x480.ucf -p xc6slx16-csg324-3 vga_640x480_top.ngc vga_640x480_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_640x480_top_map.ncd vga_640x480_top.ngd vga_640x480_top.pcf 
+par -w -intstyle ise -ol high -mt off vga_640x480_top_map.ncd vga_640x480_top.ncd vga_640x480_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_640x480_top.twx vga_640x480_top.ncd -o vga_640x480_top.twr vga_640x480_top.pcf -ucf vga_640x480.ucf 
+bitgen -intstyle ise -f vga_640x480_top.ut vga_640x480_top.ncd 
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/vga_640x480/vga_640x480_top.xst" -ofn "D:/Work/FPGA/VLSI/vga_640x480/vga_640x480_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_640x480.ucf -p xc6slx16-csg324-3 vga_640x480_top.ngc vga_640x480_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_640x480_top_map.ncd vga_640x480_top.ngd vga_640x480_top.pcf 
+par -w -intstyle ise -ol high -mt off vga_640x480_top_map.ncd vga_640x480_top.ncd vga_640x480_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_640x480_top.twx vga_640x480_top.ncd -o vga_640x480_top.twr vga_640x480_top.pcf -ucf vga_640x480.ucf 
+bitgen -intstyle ise -f vga_640x480_top.ut vga_640x480_top.ncd 
+xst -intstyle ise -ifn "C:/FPGA/vga_640x480/vga_640x480_top.xst" -ofn "C:/FPGA/vga_640x480/vga_640x480_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_640x480.ucf -p xc6slx16-csg324-3 vga_640x480_top.ngc vga_640x480_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_640x480_top_map.ncd vga_640x480_top.ngd vga_640x480_top.pcf 
+par -w -intstyle ise -ol high -mt off vga_640x480_top_map.ncd vga_640x480_top.ncd vga_640x480_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_640x480_top.twx vga_640x480_top.ncd -o vga_640x480_top.twr vga_640x480_top.pcf -ucf vga_640x480.ucf 
+bitgen -intstyle ise -f vga_640x480_top.ut vga_640x480_top.ncd 

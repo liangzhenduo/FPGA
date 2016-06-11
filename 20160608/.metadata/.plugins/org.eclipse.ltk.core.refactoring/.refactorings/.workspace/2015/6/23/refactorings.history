@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;standalone_bsp_0/microblaze_0/libsrc/led_ip_v1_00_a/src/led_ip_selftest.c&apos;" deleteContents="false" description="Delete resource &apos;standalone_bsp_0/microblaze_0/libsrc/led_ip_v1_00_a/src/led_ip_selftest.c&apos;" element1="/standalone_bsp_0/microblaze_0/libsrc/led_ip_v1_00_a/src/led_ip_selftest.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1433341395003"/>
+</session>

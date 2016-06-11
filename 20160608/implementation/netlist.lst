@@ -1,0 +1,16 @@
+D:\Work\FPGA\Embedded_Design\Lab3\implementation\system.ngc 1433340907
+D:/Work/FPGA/Embedded_Design/Lab3/implementation/dip_switches_8bits_wrapper.ngc 1433340785
+D:/Work/FPGA/Embedded_Design/Lab3/implementation/push_buttons_4bits_wrapper.ngc 1433340808
+D:/Work/FPGA/Embedded_Design/Lab3/implementation/proc_sys_reset_0_wrapper.ngc 1433340710
+D:/Work/FPGA/Embedded_Design/Lab3/implementation/clock_generator_0_wrapper.ngc 1433340868
+D:/Work/FPGA/Embedded_Design/Lab3/implementation/rs232_uart_1_wrapper.ngc 1433340763
+D:/Work/FPGA/Embedded_Design/Lab3/implementation/microblaze_0_ilmb_wrapper.ngc 1433340854
+D:/Work/FPGA/Embedded_Design/Lab3/implementation/microblaze_0_dlmb_wrapper.ngc 1433340861
+D:/Work/FPGA/Embedded_Design/Lab3/implementation/axi4lite_0_wrapper.ngc 1433340839
+D:/Work/FPGA/Embedded_Design/Lab3/implementation/microblaze_0_wrapper.ngc 1433340846
+D:/Work/FPGA/Embedded_Design/Lab3/implementation/microblaze_0_i_bram_ctrl_wrapper.ngc 1433340662
+D:/Work/FPGA/Embedded_Design/Lab3/implementation/microblaze_0_d_bram_ctrl_wrapper.ngc 1433340675
+D:/Work/FPGA/Embedded_Design/Lab3/implementation/debug_module_wrapper.ngc 1433340742
+D:/Work/FPGA/Embedded_Design/Lab3/implementation/led_ip_0_wrapper.ngc 1433340830
+D:/Work/FPGA/Embedded_Design/Lab3/implementation/microblaze_0_bram_block_wrapper.ngc 1433340695
+OK

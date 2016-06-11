@@ -1,0 +1,33 @@
+
+**** Build of configuration Debug for project empty_application_0 ****
+
+make all 
+Building file: ../src/test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.10.a -mno-xl-soft-mul -MMD -MP -MF"src/test.d" -MT"src/test.d" -o"src/test.o" "../src/test.c"
+Finished building: ../src/test.c
+' '
+Building target: empty_application_0.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.10.a -mno-xl-soft-mul -o"empty_application_0.elf"  ./src/test.o   
+Finished building target: empty_application_0.elf
+' '
+Invoking: MicroBlaze Print Size
+mb-size empty_application_0.elf  |tee "empty_application_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1426	    296	   2094	   3816	    ee8	empty_application_0.elf
+Finished building: empty_application_0.elf.size
+' '
+Invoking: Xilinx ELF Check
+elfcheck empty_application_0.elf -hw ../../hw_platform_0/system.xml -pe microblaze_0  |tee "empty_application_0.elf.elfcheck"
+elfcheck
+Xilinx EDK 13.1 Build EDK_O.40d
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_0
+empty_application_0.elf 
+
+ELF file	: empty_application_0.elf
+elfcheck passed.
+Finished building: empty_application_0.elf.elfcheck
+' '

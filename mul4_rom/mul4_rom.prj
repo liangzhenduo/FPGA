@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/rom_256x8.v"
+verilog work "mul4_rom.v"

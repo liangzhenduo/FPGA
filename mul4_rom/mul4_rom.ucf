@@ -1,0 +1,19 @@
+NET "mul[0]"  LOC = "T10";
+NET "mul[1]"  LOC = "T9";
+NET "mul[2]"  LOC = "V9";
+NET "mul[3]"  LOC = "M8";
+NET "mul[4]"  LOC = "N8";
+NET "mul[5]"  LOC = "U8";
+NET "mul[6]"  LOC = "V8";
+NET "mul[7]"  LOC = "T5";
+
+NET "mul_r[0]"  LOC = "U16";
+NET "mul_r[1]"  LOC = "V16";
+NET "mul_r[2]"  LOC = "U15";
+NET "mul_r[3]"  LOC = "V15";
+NET "mul_r[4]"  LOC = "M11";
+NET "mul_r[5]"  LOC = "N11";
+NET "mul_r[6]"  LOC = "R11";
+NET "mul_r[7]"  LOC = "T11";
+
+NET "clk"  LOC = "V10";

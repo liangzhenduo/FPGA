@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "D:\Work\FPGA\Embedded_Design\Lab3\pcores\led_ip_v1_00_a\devl\synthesis\led_ip_xst.prj"
+-top led_ip
+-p virtex6
+-ofn "D:\Work\FPGA\Embedded_Design\Lab3\pcores\led_ip_v1_00_a\devl\synthesis\led_ip_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib led_ip_v1_00_a

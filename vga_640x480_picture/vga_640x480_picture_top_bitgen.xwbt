@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\FPGA\vga_640x480_picture\vga_640x480_picture_top.ncd
+OUTFILE=C:\FPGA\vga_640x480_picture\vga_640x480_picture_top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\FPGA\vga_640x480_picture
+LICENSE=WebPack
+USER_INFO=__0_0_0

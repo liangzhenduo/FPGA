@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          D:\Work\FPGA\Embedded_Design\Lab3/drivers/led_ip_v1_00_a/data/led_ip_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Wed Jun 03 22:00:02 2015 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER led_ip
+
+  OPTION supported_peripherals = (led_ip);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

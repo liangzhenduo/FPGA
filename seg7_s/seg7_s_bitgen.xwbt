@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\FPGA\seg7_s\seg7_s.ncd
+OUTFILE=C:\FPGA\seg7_s\seg7_s.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\FPGA\seg7_s
+LICENSE=WebPack
+USER_INFO=__0_0_0

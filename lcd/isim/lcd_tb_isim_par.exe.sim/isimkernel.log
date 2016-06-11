@@ -1,0 +1,28 @@
+Command line:
+   lcd_tb_isim_par.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49644
+
+Wed May 04 13:31:25 2016
+
+
+ Elaboration Time: 0.203125 sec
+
+ Current Memory Usage: 894.284 Meg
+
+ Total Signals          : 2933
+ Total Nets             : 2046
+ Total Signal Drivers   : 2050
+ Total Blocks           : 398
+ Total Primitive Blocks : 275
+ Total Processes        : 2618
+ Total Traceable Variables  : 1019
+ Total Scalar Nets and Variables : 31755
+
+ Total Simulation Time: 0.265625 sec
+
+ Current Memory Usage: 894.284 Meg
+
+Wed May 04 13:31:40 2016
+

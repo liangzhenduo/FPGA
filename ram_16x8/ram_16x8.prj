@@ -1,0 +1,5 @@
+verilog work "x7seg.v"
+verilog work "ipcore_dir/ram.v"
+verilog work "clock_pulse.v"
+verilog work "clkdiv.v"
+verilog work "ram_16x8.v"

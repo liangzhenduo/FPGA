@@ -1,0 +1,595 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: ram_16x8.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ram_16x8.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ram_16x8"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : ram_16x8
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\FPGA\ram_16x8\x7seg.v" into library work
+Parsing module <x7seg>.
+Analyzing Verilog file "C:\FPGA\ram_16x8\ipcore_dir\ram.v" into library work
+Parsing module <ram>.
+Analyzing Verilog file "C:\FPGA\ram_16x8\clock_pulse.v" into library work
+Parsing module <clock_pulse>.
+Analyzing Verilog file "C:\FPGA\ram_16x8\clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "C:\FPGA\ram_16x8\ram_16x8.v" into library work
+Parsing module <ram_16x8>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ram_16x8>.
+
+Elaborating module <clkdiv>.
+WARNING:HDLCompiler:413 - "C:\FPGA\ram_16x8\clkdiv.v" Line 35: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <clock_pulse>.
+
+Elaborating module <x7seg>.
+WARNING:HDLCompiler:413 - "C:\FPGA\ram_16x8\x7seg.v" Line 83: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <ram>.
+WARNING:HDLCompiler:1499 - "C:\FPGA\ram_16x8\ipcore_dir\ram.v" Line 40: Empty module <ram> remains a black box.
+WARNING:HDLCompiler:413 - "C:\FPGA\ram_16x8\ram_16x8.v" Line 57: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\FPGA\ram_16x8\ram_16x8.v" Line 72: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\FPGA\ram_16x8\ram_16x8.v" Line 73: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ram_16x8>.
+    Related source file is "C:\FPGA\ram_16x8\ram_16x8.v".
+    Found 4-bit register for signal <wr_addr>.
+    Found 4-bit register for signal <rd_addr>.
+    Found 8-bit register for signal <input_data>.
+    Found 4-bit adder for signal <read[3]_GND_1_o_add_7_OUT> created at line 57.
+    Found 4-bit adder for signal <write[3]_GND_1_o_add_13_OUT> created at line 72.
+    Found 8-bit adder for signal <input_data[7]_GND_1_o_add_14_OUT> created at line 73.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <ram_16x8> synthesized.
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "C:\FPGA\ram_16x8\clkdiv.v".
+    Found 20-bit register for signal <counter>.
+    Found 20-bit adder for signal <counter[19]_GND_2_o_add_1_OUT> created at line 35.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+Unit <clkdiv> synthesized.
+
+Synthesizing Unit <clock_pulse>.
+    Related source file is "C:\FPGA\ram_16x8\clock_pulse.v".
+    Found 2-bit register for signal <delay2>.
+    Found 2-bit register for signal <delay3>.
+    Found 2-bit register for signal <delay1>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <clock_pulse> synthesized.
+
+Synthesizing Unit <x7seg>.
+    Related source file is "C:\FPGA\ram_16x8\x7seg.v".
+    Found 20-bit register for signal <clkdiv>.
+    Found 20-bit adder for signal <clkdiv[19]_GND_4_o_add_13_OUT> created at line 83.
+    Found 16x7-bit Read Only RAM for signal <a_to_g>
+    Found 1-bit 4-to-1 multiplexer for signal <digit<3>> created at line 49.
+    Found 1-bit 4-to-1 multiplexer for signal <digit<2>> created at line 49.
+    Found 1-bit 4-to-1 multiplexer for signal <digit<1>> created at line 49.
+    Found 1-bit 4-to-1 multiplexer for signal <digit<0>> created at line 49.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <x7seg> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 5
+ 20-bit adder                                          : 2
+ 4-bit adder                                           : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 8
+ 2-bit register                                        : 3
+ 20-bit register                                       : 2
+ 4-bit register                                        : 2
+ 8-bit register                                        : 1
+# Multiplexers                                         : 5
+ 1-bit 4-to-1 multiplexer                              : 4
+ 4-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/ram.ngc>.
+Loading core <ram> for timing and area information for instance <U4>.
+
+Synthesizing (advanced) Unit <clkdiv>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <clkdiv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ram_16x8>.
+The following registers are absorbed into counter <write>: 1 register on signal <write>.
+The following registers are absorbed into counter <read>: 1 register on signal <read>.
+The following registers are absorbed into counter <input_data>: 1 register on signal <input_data>.
+Unit <ram_16x8> synthesized (advanced).
+
+Synthesizing (advanced) Unit <x7seg>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_a_to_g> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <digit>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <a_to_g>        |          |
+    -----------------------------------------------------------------------
+Unit <x7seg> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port distributed Read Only RAM        : 1
+# Counters                                             : 5
+ 20-bit up counter                                     : 2
+ 4-bit up counter                                      : 2
+ 8-bit up counter                                      : 1
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+# Multiplexers                                         : 5
+ 1-bit 4-to-1 multiplexer                              : 4
+ 4-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2146 - In block <ram_16x8>, Counter <input_data> <write> are equivalent, XST will keep only <input_data>.
+
+Optimizing unit <ram_16x8> ...
+
+Optimizing unit <clock_pulse> ...
+
+Optimizing unit <x7seg> ...
+INFO:Xst:2261 - The FF/Latch <U1/counter_10> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_10> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_11> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_11> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_12> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_12> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_13> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_13> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_14> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_14> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_15> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_15> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_16> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_16> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_17> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_17> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_18> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_18> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_19> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_19> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_0> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_0> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_1> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_1> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_2> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_2> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_3> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_3> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_4> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_4> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_5> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_5> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_6> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_6> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_7> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_7> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_8> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_8> 
+INFO:Xst:2261 - The FF/Latch <U1/counter_9> in Unit <ram_16x8> is equivalent to the following FF/Latch, which will be removed : <U3/clkdiv_9> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ram_16x8, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ram_16x8.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 118
+#      GND                         : 2
+#      INV                         : 2
+#      LUT1                        : 26
+#      LUT2                        : 4
+#      LUT3                        : 5
+#      LUT4                        : 12
+#      LUT5                        : 10
+#      LUT6                        : 1
+#      MUXCY                       : 26
+#      VCC                         : 2
+#      XORCY                       : 28
+# FlipFlops/Latches                : 38
+#      FDC                         : 26
+#      FDCE                        : 12
+# RAMS                             : 1
+#      RAMB8BWER                   : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 23
+#      IBUF                        : 4
+#      OBUF                        : 19
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              38  out of  18224     0%  
+ Number of Slice LUTs:                   60  out of   9112     0%  
+    Number used as Logic:                60  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     64
+   Number with an unused Flip Flop:      26  out of     64    40%  
+   Number with an unused LUT:             4  out of     64     6%  
+   Number of fully used LUT-FF pairs:    34  out of     64    53%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    232    10%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 21    |
+U1/counter_19                      | NONE(input_data_0)     | 18    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.720ns (Maximum Frequency: 367.667MHz)
+   Minimum input arrival time before clock: 3.714ns
+   Maximum output required time after clock: 7.008ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.111ns (frequency: 473.681MHz)
+  Total number of paths / destination ports: 210 / 20
+-------------------------------------------------------------------------
+Delay:               2.111ns (Levels of Logic = 2)
+  Source:            U1/counter_19 (FF)
+  Destination:       U1/counter_19 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: U1/counter_19 to U1/counter_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             27   0.447   1.221  U1/counter_19 (U1/counter_19)
+     LUT1:I0->O            0   0.205   0.000  U1/Mcount_counter_xor<19>_rt (U1/Mcount_counter_xor<19>_rt)
+     XORCY:LI->O           1   0.136   0.000  U1/Mcount_counter_xor<19> (Result<19>)
+     FDC:D                     0.102          U1/counter_19
+    ----------------------------------------
+    Total                      2.111ns (0.890ns logic, 1.221ns route)
+                                       (42.2% logic, 57.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/counter_19'
+  Clock period: 2.720ns (frequency: 367.667MHz)
+  Total number of paths / destination ports: 94 / 28
+-------------------------------------------------------------------------
+Delay:               2.720ns (Levels of Logic = 10)
+  Source:            input_data_0 (FF)
+  Destination:       input_data_7 (FF)
+  Source Clock:      U1/counter_19 rising
+  Destination Clock: U1/counter_19 rising
+
+  Data Path: input_data_0 to input_data_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.447   0.714  input_data_0 (input_data_0)
+     INV:I->O              1   0.206   0.000  Mcount_input_data_lut<0>_INV_0 (Mcount_input_data_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcount_input_data_cy<0> (Mcount_input_data_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_input_data_cy<1> (Mcount_input_data_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_input_data_cy<2> (Mcount_input_data_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_input_data_cy<3> (Mcount_input_data_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_input_data_cy<4> (Mcount_input_data_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_input_data_cy<5> (Mcount_input_data_cy<5>)
+     MUXCY:CI->O           0   0.019   0.000  Mcount_input_data_cy<6> (Mcount_input_data_cy<6>)
+     XORCY:CI->O           1   0.180   0.580  Mcount_input_data_xor<7> (Result<7>1)
+     LUT5:I4->O            1   0.205   0.000  input_data_7_dpot (input_data_7_dpot)
+     FDCE:D                    0.102          input_data_7
+    ----------------------------------------
+    Total                      2.720ns (1.426ns logic, 1.294ns route)
+                                       (52.4% logic, 47.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              3.714ns (Levels of Logic = 3)
+  Source:            wea (PAD)
+  Destination:       U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram (RAM)
+  Destination Clock: clk rising
+
+  Data Path: wea to U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.222   1.321  wea_IBUF (wea_IBUF)
+     LUT3:I0->O            2   0.205   0.616  Mmux_port_addr41 (port_addr<3>)
+     begin scope: 'U4:addra<3>'
+     RAMB8BWER:ADDRAWRADDR8        0.350          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram
+    ----------------------------------------
+    Total                      3.714ns (1.777ns logic, 1.938ns route)
+                                       (47.8% logic, 52.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/counter_19'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              3.635ns (Levels of Logic = 3)
+  Source:            wea (PAD)
+  Destination:       read_3 (FF)
+  Destination Clock: U1/counter_19 rising
+
+  Data Path: wea to read_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.222   1.321  wea_IBUF (wea_IBUF)
+     LUT3:I0->O            1   0.205   0.580  GND_1_o_GND_1_o_AND_9_o1_rstpot (GND_1_o_GND_1_o_AND_9_o1_rstpot)
+     LUT5:I4->O            1   0.205   0.000  read_3_dpot (read_3_dpot)
+     FDCE:D                    0.102          read_3
+    ----------------------------------------
+    Total                      3.635ns (1.734ns logic, 1.901ns route)
+                                       (47.7% logic, 52.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 120 / 11
+-------------------------------------------------------------------------
+Offset:              7.008ns (Levels of Logic = 4)
+  Source:            U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram (RAM)
+  Destination:       a_to_g<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram to a_to_g<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB8BWER:CLKBRDCLK->DOBDO0    1   1.850   0.580  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram (douta<4>)
+     end scope: 'U4:douta<4>'
+     LUT4:I3->O            7   0.205   1.021  U3/Mmux_digit<0>11 (U3/digit<0>)
+     LUT4:I0->O            1   0.203   0.579  U3/Mram_a_to_g61 (a_to_g_6_OBUF)
+     OBUF:I->O                 2.571          a_to_g_6_OBUF (a_to_g<6>)
+    ----------------------------------------
+    Total                      7.008ns (4.829ns logic, 2.179ns route)
+                                       (68.9% logic, 31.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/counter_19'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.762ns (Levels of Logic = 1)
+  Source:            read_0 (FF)
+  Destination:       rd_addr<0> (PAD)
+  Source Clock:      U1/counter_19 rising
+
+  Data Path: read_0 to rd_addr<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.447   0.744  read_0 (read_0)
+     OBUF:I->O                 2.571          rd_addr_0_OBUF (rd_addr<0>)
+    ----------------------------------------
+    Total                      3.762ns (3.018ns logic, 0.744ns route)
+                                       (80.2% logic, 19.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock U1/counter_19
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/counter_19  |    2.720|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/counter_19  |    2.435|         |         |         |
+clk            |    2.111|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.61 secs
+ 
+--> 
+
+Total memory usage is 293508 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :   23 (   0 filtered)
+

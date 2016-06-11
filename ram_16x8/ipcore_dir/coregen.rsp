@@ -1,0 +1,3 @@
+NEWPROJECT "D:/Work/FPGA/VLSI/ram_16x8/ipcore_dir/coregen.cgp"
+SETPROJECT "D:/Work/FPGA/VLSI/ram_16x8/ipcore_dir/coregen.cgp"
+LAUNCHXCO "D:/Work/FPGA/VLSI/ram_16x8/ipcore_dir/ram.xco"

@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "D:/Work/FPGA/VLSI/mul4_rom/mul4_rom.xst" -ofn "D:/Work/FPGA/VLSI/mul4_rom/mul4_rom.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 mul4_rom.ngc mul4_rom.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mul4_rom_map.ncd mul4_rom.ngd mul4_rom.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mul4_rom.ucf -p xc6slx16-csg324-3 mul4_rom.ngc mul4_rom.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mul4_rom.ucf -p xc6slx16-csg324-3 mul4_rom.ngc mul4_rom.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mul4_rom_map.ncd mul4_rom.ngd mul4_rom.pcf 
+par -w -intstyle ise -ol high -mt off mul4_rom_map.ncd mul4_rom.ncd mul4_rom.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mul4_rom.twx mul4_rom.ncd -o mul4_rom.twr mul4_rom.pcf -ucf mul4_rom.ucf 
+bitgen -intstyle ise -f mul4_rom.ut mul4_rom.ncd 
+xst -intstyle ise -ifn "C:/FPGA/mul4_rom/mul4_rom.xst" -ofn "C:/FPGA/mul4_rom/mul4_rom.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc mul4_rom.ucf -p xc6slx16-csg324-3 mul4_rom.ngc mul4_rom.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mul4_rom_map.ncd mul4_rom.ngd mul4_rom.pcf 
+par -w -intstyle ise -ol high -mt off mul4_rom_map.ncd mul4_rom.ncd mul4_rom.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mul4_rom.twx mul4_rom.ncd -o mul4_rom.twr mul4_rom.pcf -ucf mul4_rom.ucf 
+bitgen -intstyle ise -f mul4_rom.ut mul4_rom.ncd 

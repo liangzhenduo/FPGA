@@ -1,0 +1,2 @@
+verilog work "netgen/par/lcd_timesim.v"
+verilog work "lcd_tb.v"

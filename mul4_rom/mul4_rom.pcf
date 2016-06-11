@@ -1,0 +1,24 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Jun 11 17:00:52 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "mul_r<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "mul_r<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "mul_r<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "mul<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "mul_r<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "mul<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "mul_r<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "mul<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "mul_r<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "mul<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "mul_r<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "mul<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "mul_r<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "mul<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "mul<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "mul<7>" LOCATE = SITE "T5" LEVEL 1;
+SCHEMATIC END;
+

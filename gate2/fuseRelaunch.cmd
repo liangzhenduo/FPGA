@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Work/FPGA/VLSI/gate2/gate2_tb_isim_par.exe" -prj "D:/Work/FPGA/VLSI/gate2/gate2_tb_par.prj" "work.gate2_tb" "work.glbl" 

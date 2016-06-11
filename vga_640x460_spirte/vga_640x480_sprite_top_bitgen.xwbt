@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\FPGA\vga_640x460_spirte\vga_640x480_sprite_top.ncd
+OUTFILE=C:\FPGA\vga_640x460_spirte\vga_640x480_sprite_top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\FPGA\vga_640x460_spirte
+LICENSE=WebPack
+USER_INFO=__0_0_0

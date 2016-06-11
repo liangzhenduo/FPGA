@@ -1,0 +1,10 @@
+-batch 
+-create led_ip 
+-ver 1.00.a 
+-dir "D:\Work\FPGA\Embedded_Design\Lab3" 
+-lang verilog 
+-bus axi4lite s 
+-reg 2 
+-xps 
+-ise 
+-driver 

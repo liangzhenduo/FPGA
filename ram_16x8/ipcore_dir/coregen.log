@@ -1,0 +1,12 @@
+CoreGen has not been configured with any user repositories.
+CoreGen has been configured with the following Xilinx repositories:
+ - 'D:\FPGA\Xilinx\13.1\ISE_DS\ISE\coregen\' []
+INFO:sim:927 - Generating component instance 'ram' of
+   'xilinx.com:ip:blk_mem_gen:6.1' from
+   'D:\FPGA\Xilinx\13.1\ISE_DS\ISE\coregen\ip\xilinx\primary\com\xilinx\ip\blk_m
+   em_gen_v6_1\component.xml'.
+Applying current project options...
+Finished applying current project options.
+Executing Tcl generator...
+Cancelled executing Tcl generator.
+Wrote file for project 'D:\Work\FPGA\VLSI\ram_16x8\ipcore_dir\ram.cgp'.

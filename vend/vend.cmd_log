@@ -1,0 +1,131 @@
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/workspace/vend/vend.xst" -ofn "C:/workspace/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 
+xst -intstyle ise -ifn "C:/FPGA/vend/vend.xst" -ofn "C:/FPGA/vend/vend.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vend.ucf -p xc6slx16-csg324-3 vend.ngc vend.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vend_map.ncd vend.ngd vend.pcf 
+par -w -intstyle ise -ol high -mt off vend_map.ncd vend.ncd vend.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vend.twx vend.ncd -o vend.twr vend.pcf -ucf vend.ucf 
+bitgen -intstyle ise -f vend.ut vend.ncd 

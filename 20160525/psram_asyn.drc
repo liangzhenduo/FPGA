@@ -1,0 +1,8 @@
+Release 13.1 Drc O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Wed Jun 10 16:11:15 2015
+
+drc -z PSRAM_asyn.ncd PSRAM_asyn.pcf
+
+DRC detected 0 errors and 0 warnings.

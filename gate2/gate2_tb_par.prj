@@ -1,0 +1,2 @@
+verilog work "netgen/par/gate2_timesim.v"
+verilog work "gate2_tb.v"

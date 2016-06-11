@@ -1,0 +1,2 @@
+SETPROJECT "D:/Work/FPGA/Digital_Logic_Design/Lab33/vga_640x480_picture/ipcore_dir/coregen.cgp"
+LAUNCHXCO "D:/Work/FPGA/Digital_Logic_Design/Lab33/vga_640x480_picture/ipcore_dir/loons240x160.xco"

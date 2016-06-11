@@ -1,0 +1,21 @@
+NET "n" LOC = "U16";
+
+NET "c[1]" LOC = "T9";
+NET "c[0]" LOC = "T10";
+
+NET "clk"  LOC = "V10";
+NET "rst"  LOC = "T5";
+NET "enb"  LOC = "C9";
+
+NET "z[6]" LOC = "T17";
+NET "z[5]" LOC = "T18";
+NET "z[4]" LOC = "U17";
+NET "z[3]" LOC = "U18";
+NET "z[2]" LOC = "M14";
+NET "z[1]" LOC = "N14";
+NET "z[0]" LOC = "L14";
+
+NET "x[0]" LOC = "N16";
+NET "x[1]" LOC = "N15";
+NET "x[2]" LOC = "P18";
+NET "x[3]" LOC = "P17";
