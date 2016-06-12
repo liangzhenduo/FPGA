@@ -9,8 +9,6 @@ loons240x160.ngc
 loons240x160.sym
 loons240x160.v
 loons240x160.veo
-loons240x160.vhd
-loons240x160.vho
 loons240x160.xco
 loons240x160.xise
 loons240x160_flist.txt

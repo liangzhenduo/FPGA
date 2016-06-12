@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-06-11T17:33:16</DateModified>
+  <DateModified>2016-06-11T18:35:06</DateModified>
   <ModuleName>vga_640x480_picture_top</ModuleName>
   <SummaryTimeStamp>2013-04-23T16:51:36</SummaryTimeStamp>
   <SavedFilePath>C:/FPGA/vga_640x480_picture/iseconfig/vga_640x480_picture_top.xreport</SavedFilePath>
