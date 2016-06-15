@@ -1,0 +1,279 @@
+Release 13.1 - platgen Xilinx EDK 13.1 Build EDK_O.40d
+ (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: platgen -p xc6slx16csg324-3 -lang vhdl -msg
+__xps/ise/xmsgprops.lst system.mhs 
+
+Parse D:/Work/FPGA/Embedded_Design/Lab4/system.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_BASEFAMILY value to spartan6 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnec
+   t_v1_02_a\data\axi_interconnect_v2_1_0.mpd line 69 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_1
+   0_a\data\microblaze_v2_1_0.mpd line 183 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_1
+   0_a\data\microblaze_v2_1_0.mpd line 322 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_1
+   0_a\data\microblaze_v2_1_0.mpd line 352 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x00007fff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40000000-0x4000ffff) Push_Buttons_4Bits	axi4lite_0
+  (0x40020000-0x4002ffff) DIP_Switches_8Bits	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x41200000-0x4120ffff) axi_intc_0	axi4lite_0
+  (0x41c00000-0x41c0ffff) delay	axi4lite_0
+  (0x74800000-0x7480ffff) debug_module	axi4lite_0
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_a
+   \data\lmb_v10_v2_1_0.mpd line 70 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_a
+   \data\lmb_v10_v2_1_0.mpd line 70 
+INFO:EDK - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x8000 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_0
+   0_a\data\bram_block_v2_1_0.mpd line 67 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 6 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+WARNING:EDK - PORT: bscan_tdo1, CONNECTOR: bscan_tdo1 - No driver found. Port
+   will be driven to GND -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\dat
+   a\mdm_v2_1_0.mpd line 230 
+WARNING:EDK - PORT: bscan_tdi, CONNECTOR: bscan_tdi - floating connection -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\dat
+   a\mdm_v2_1_0.mpd line 223 
+WARNING:EDK - PORT: bscan_reset, CONNECTOR: bscan_reset - floating connection -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\dat
+   a\mdm_v2_1_0.mpd line 224 
+WARNING:EDK - PORT: bscan_shift, CONNECTOR: bscan_shift - floating connection -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\dat
+   a\mdm_v2_1_0.mpd line 225 
+WARNING:EDK - PORT: bscan_update, CONNECTOR: bscan_update - floating connection
+   -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\dat
+   a\mdm_v2_1_0.mpd line 226 
+WARNING:EDK - PORT: bscan_capture, CONNECTOR: bscan_capture - floating
+   connection -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\dat
+   a\mdm_v2_1_0.mpd line 227 
+WARNING:EDK - PORT: bscan_sel1, CONNECTOR: bscan_sel1 - floating connection -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\dat
+   a\mdm_v2_1_0.mpd line 228 
+WARNING:EDK - PORT: bscan_drck1, CONNECTOR: bscan_drck1 - floating connection -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_b\dat
+   a\mdm_v2_1_0.mpd line 229 
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is overriding
+   PARAMETER C_RANGE_CHECK value to 1 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnec
+   t_v1_02_a\data\axi_interconnect_v2_1_0.mpd line 137 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_AXI value to 1 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_1
+   0_a\data\microblaze_v2_1_0.mpd line 216 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_1
+   0_a\data\microblaze_v2_1_0.mpd line 320 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_1
+   0_a\data\microblaze_v2_1_0.mpd line 350 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_INTERRUPT value to 1 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_1
+   0_a\data\microblaze_v2_1_0.mpd line 384 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_1
+   0_a\data\microblaze_v2_1_0.mpd line 385 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_1
+   0_a\data\microblaze_v2_1_0.mpd line 386 
+INFO:EDK - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl - tcl is
+   overriding PARAMETER C_MASK value to 0x40000000 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cnt
+   lr_v3_00_a\data\lmb_bram_if_cntlr_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl - tcl is
+   overriding PARAMETER C_MASK value to 0x40000000 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cnt
+   lr_v3_00_a\data\lmb_bram_if_cntlr_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: axi_intc, INSTANCE:axi_intc_0 - tcl is overriding PARAMETER
+   C_NUM_INTR_INPUTS value to 1 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_01_
+   a\data\axi_intc_v2_1_0.mpd line 71 
+INFO:EDK - IPNAME: axi_intc, INSTANCE:axi_intc_0 - tcl is overriding PARAMETER
+   C_KIND_OF_INTR value to 0b11111111111111111111111111111111 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_01_
+   a\data\axi_intc_v2_1_0.mpd line 72 
+INFO:EDK - IPNAME: axi_intc, INSTANCE:axi_intc_0 - tcl is overriding PARAMETER
+   C_KIND_OF_EDGE value to 0b11111111111111111111111111111111 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_01_
+   a\data\axi_intc_v2_1_0.mpd line 73 
+INFO:EDK - IPNAME: axi_intc, INSTANCE:axi_intc_0 - tcl is overriding PARAMETER
+   C_KIND_OF_LVL value to 0b11111111111111111111111111111111 -
+   D:\FPGA\Xilinx\13.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_01_
+   a\data\axi_intc_v2_1_0.mpd line 74 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: Generating core-level timing constraints for synchronous clock conversions
+in axi_interconnect axi4lite_0.
+INFO: No asynchronous clock conversions in axi_interconnect axi4lite_0.
+INFO: Setting timing constaints for microblaze_0.
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0_ilmb.
+INFO: The microblaze_0_ilmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_ilmb_wrapper/microblaze_0_ilmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0_dlmb.
+INFO: The microblaze_0_dlmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_dlmb_wrapper/microblaze_0_dlmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line 93 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line 113 - elaborating IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:axi4lite_0 - D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line 22 -
+Running XST synthesis
+INSTANCE:microblaze_0 - D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line 30 -
+Running XST synthesis
+INSTANCE:microblaze_0_ilmb - D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line
+61 - Running XST synthesis
+INSTANCE:microblaze_0_dlmb - D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line
+68 - Running XST synthesis
+INSTANCE:microblaze_0_i_bram_ctrl - D:\Work\FPGA\Embedded_Design\Lab4\system.mhs
+line 75 - Running XST synthesis
+INSTANCE:microblaze_0_d_bram_ctrl - D:\Work\FPGA\Embedded_Design\Lab4\system.mhs
+line 84 - Running XST synthesis
+INSTANCE:microblaze_0_bram_block - D:\Work\FPGA\Embedded_Design\Lab4\system.mhs
+line 93 - Running XST synthesis
+INSTANCE:proc_sys_reset_0 - D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line
+100 - Running XST synthesis
+INSTANCE:clock_generator_0 - D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line
+113 - Running XST synthesis
+INSTANCE:debug_module - D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line 128 -
+Running XST synthesis
+INSTANCE:rs232_uart_1 - D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line 146 -
+Running XST synthesis
+INSTANCE:dip_switches_8bits - D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line
+166 - Running XST synthesis
+INSTANCE:push_buttons_4bits - D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line
+185 - Running XST synthesis
+INSTANCE:delay - D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line 204 - Running
+XST synthesis
+INSTANCE:axi_intc_0 - D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line 216 -
+Running XST synthesis
+
+Running NGCBUILD ...
+IPNAME:axi4lite_0_wrapper INSTANCE:axi4lite_0 -
+D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line 22 - Running NGCBUILD
+IPNAME:microblaze_0_wrapper INSTANCE:microblaze_0 -
+D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line 30 - Running NGCBUILD
+IPNAME:microblaze_0_ilmb_wrapper INSTANCE:microblaze_0_ilmb -
+D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line 61 - Running NGCBUILD
+IPNAME:microblaze_0_dlmb_wrapper INSTANCE:microblaze_0_dlmb -
+D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line 68 - Running NGCBUILD
+IPNAME:clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line 113 - Running NGCBUILD
+IPNAME:axi_intc_0_wrapper INSTANCE:axi_intc_0 -
+D:\Work\FPGA\Embedded_Design\Lab4\system.mhs line 216 - Running NGCBUILD
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/system.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 154.00 seconds

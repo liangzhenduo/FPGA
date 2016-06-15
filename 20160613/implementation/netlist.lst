@@ -1,0 +1,17 @@
+D:\Work\FPGA\Embedded_Design\Lab4\implementation\system.ngc 1430277146
+D:/Work/FPGA/Embedded_Design/Lab4/implementation/dip_switches_8bits_wrapper.ngc 1430277093
+D:/Work/FPGA/Embedded_Design/Lab4/implementation/push_buttons_4bits_wrapper.ngc 1430277100
+D:/Work/FPGA/Embedded_Design/Lab4/implementation/proc_sys_reset_0_wrapper.ngc 1430277068
+D:/Work/FPGA/Embedded_Design/Lab4/implementation/clock_generator_0_wrapper.ngc 1430277130
+D:/Work/FPGA/Embedded_Design/Lab4/implementation/rs232_uart_1_wrapper.ngc 1430277086
+D:/Work/FPGA/Embedded_Design/Lab4/implementation/microblaze_0_ilmb_wrapper.ngc 1430277125
+D:/Work/FPGA/Embedded_Design/Lab4/implementation/microblaze_0_dlmb_wrapper.ngc 1430277128
+D:/Work/FPGA/Embedded_Design/Lab4/implementation/axi4lite_0_wrapper.ngc 1430277120
+D:/Work/FPGA/Embedded_Design/Lab4/implementation/microblaze_0_wrapper.ngc 1430277123
+D:/Work/FPGA/Embedded_Design/Lab4/implementation/microblaze_0_i_bram_ctrl_wrapper.ngc 1430277054
+D:/Work/FPGA/Embedded_Design/Lab4/implementation/microblaze_0_d_bram_ctrl_wrapper.ngc 1430277059
+D:/Work/FPGA/Embedded_Design/Lab4/implementation/debug_module_wrapper.ngc 1430277079
+D:/Work/FPGA/Embedded_Design/Lab4/implementation/delay_wrapper.ngc 1430277109
+D:/Work/FPGA/Embedded_Design/Lab4/implementation/axi_intc_0_wrapper.ngc 1430277133
+D:/Work/FPGA/Embedded_Design/Lab4/implementation/microblaze_0_bram_block_wrapper.ngc 1430277064
+OK

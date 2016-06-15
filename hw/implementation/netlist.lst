@@ -1,0 +1,16 @@
+C:\FPGA\hw\implementation\system.ngc 1465808396
+C:/FPGA/hw/implementation/system_dip_switches_8bits_wrapper.ngc 1465808342
+C:/FPGA/hw/implementation/system_push_buttons_4bits_wrapper.ngc 1465808350
+C:/FPGA/hw/implementation/system_proc_sys_reset_0_wrapper.ngc 1465808311
+C:/FPGA/hw/implementation/system_clock_generator_0_wrapper.ngc 1465808379
+C:/FPGA/hw/implementation/system_rs232_uart_1_wrapper.ngc 1465808332
+C:/FPGA/hw/implementation/system_microblaze_0_ilmb_wrapper.ngc 1465808372
+C:/FPGA/hw/implementation/system_microblaze_0_dlmb_wrapper.ngc 1465808376
+C:/FPGA/hw/implementation/system_axi4lite_0_wrapper.ngc 1465808364
+C:/FPGA/hw/implementation/system_microblaze_0_wrapper.ngc 1465808368
+C:/FPGA/hw/implementation/system_microblaze_0_i_bram_ctrl_wrapper.ngc 1465808295
+C:/FPGA/hw/implementation/system_microblaze_0_d_bram_ctrl_wrapper.ngc 1465808300
+C:/FPGA/hw/implementation/system_debug_module_wrapper.ngc 1465808325
+C:/FPGA/hw/implementation/system_seg_ip_0_wrapper.ngc 1465808359
+C:/FPGA/hw/implementation/system_microblaze_0_bram_block_wrapper.ngc 1465808307
+OK

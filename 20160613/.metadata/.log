@@ -1,0 +1,39 @@
+!SESSION 2015-04-29 11:18:37.761 -----------------------------------------------
+eclipse.buildId=Release 13.1 Build SDK_O.40d
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-04-29 11:20:55.324
+!MESSAGE Indexed 'standalone_bsp_0' (0 sources, 8 headers) in 0.22 sec: 0 declarations; 0 references; 8 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-04-29 11:30:17.020
+!MESSAGE Indexed 'empty_application_0' (0 sources, 21 headers) in 0.11 sec: 153 declarations; 291 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.22%)
+!SESSION 2016-06-15 08:35:38.875 -----------------------------------------------
+eclipse.buildId=Release 14.7 Build SDK_P.20131013
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-06-15 08:36:00.638
+!MESSAGE Indexed 'empty_application_0' (1 sources, 10 headers) in 0.83 sec: 216 declarations; 240 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-06-15 08:36:04.244
+!MESSAGE Indexed 'standalone_bsp_0' (56 sources, 94 headers) in 3.53 sec: 1,948 declarations; 7,774 references; 34 unresolved inclusions; 14 syntax errors; 74 unresolved names (0.76%)
+
+!ENTRY org.eclipse.core.jobs 4 2 2016-06-15 08:38:20.877
+!MESSAGE An internal error occurred during: "Monitoring hardware specifications".
+!STACK 0
+java.lang.IllegalStateException: Workspace is closed.
+	at org.eclipse.core.resources.ResourcesPlugin.getWorkspace(ResourcesPlugin.java:399)
+	at com.xilinx.sdk.hw.HwProject.getHwProjectsInWorkspace(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.doMonitorTask(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.access$0(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor$1.run(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:180)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4687)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitor.doMonitor(Unknown Source)
+	at com.xilinx.sdk.hw.sync.HwPlatformMonitorUtils$1.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

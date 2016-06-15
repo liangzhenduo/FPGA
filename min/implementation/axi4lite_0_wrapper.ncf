@@ -1,0 +1,14 @@
+INST "axi4lite_0/*_reset_resync*" TNM = FFS "axi4lite_0_reset_resync";
+TIMEGRP "axi4lite_0_reset_source" = FFS PADS CPUS;
+TIMESPEC "TS_axi4lite_0_reset_resync" = FROM "axi4lite_0_reset_source" TO "axi4lite_0_reset_resync" TIG;
+INST "axi4lite_0/*_converter_bank/*slow_div2" TNM = "axi4lite_0_clock_conv_slow_div2";
+TIMEGRP "axi4lite_0_local_flops" = FFS("axi4lite_0/*") RAMS("axi4lite_0/*") EXCEPT "axi4lite_0_clock_conv_slow_div2";
+NET "axi4lite_0/*si_converter_bank/gen_conv_slot[0]*S_AXI_ACLK" TNM_NET = "axi4lite_0_SI0_clock_conv_ACLK_temp";
+TIMEGRP "axi4lite_0_SI0_clock_conv_ACLK_global" = "axi4lite_0_SI0_clock_conv_ACLK_temp" EXCEPT "axi4lite_0_clock_conv_slow_div2";
+TIMEGRP "axi4lite_0_SI0_clock_conv_otherclk_global" = FFS RAMS CPUS EXCEPT "axi4lite_0_SI0_clock_conv_ACLK_temp" "axi4lite_0_clock_conv_slow_div2";
+TIMEGRP "axi4lite_0_SI0_clock_conv_otherclk_local" = "axi4lite_0_local_flops" EXCEPT "axi4lite_0_SI0_clock_conv_ACLK_global";
+TIMEGRP "axi4lite_0_SI0_clock_conv_ACLK_local" = "axi4lite_0_local_flops" EXCEPT "axi4lite_0_SI0_clock_conv_otherclk_local";
+TIMESPEC "TS_axi4lite_0_SI0_sync_clock_conv_outbound" = FROM "axi4lite_0_SI0_clock_conv_otherclk_local" TO "axi4lite_0_SI0_clock_conv_ACLK_global" 20000 PS;
+TIMESPEC "TS_axi4lite_0_SI0_sync_clock_conv_inbound" = FROM "axi4lite_0_SI0_clock_conv_ACLK_global" TO "axi4lite_0_SI0_clock_conv_otherclk_local" 20000 PS;
+TIMESPEC "TS_axi4lite_0_SI0_sync_clock_conv_intrans" = FROM "axi4lite_0_SI0_clock_conv_otherclk_global" TO "axi4lite_0_SI0_clock_conv_ACLK_local" 20000 PS;
+TIMESPEC "TS_axi4lite_0_SI0_sync_clock_conv_outtrans" = FROM "axi4lite_0_SI0_clock_conv_ACLK_local" TO "axi4lite_0_SI0_clock_conv_otherclk_global" 20000 PS;

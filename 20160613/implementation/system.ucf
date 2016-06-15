@@ -1,0 +1,26 @@
+#
+# pin constraints
+#
+NET DIP_Switches_8Bits_TRI_I[0] LOC = "T10"  |  IOSTANDARD = "LVCMOS33";
+NET DIP_Switches_8Bits_TRI_I[1] LOC = "T9"  |  IOSTANDARD = "LVCMOS33";
+NET DIP_Switches_8Bits_TRI_I[2] LOC = "V9"  |  IOSTANDARD = "LVCMOS33";
+NET DIP_Switches_8Bits_TRI_I[3] LOC = "M8"  |  IOSTANDARD = "LVCMOS33";
+NET DIP_Switches_8Bits_TRI_I[4] LOC = "N8"  |  IOSTANDARD = "LVCMOS33";
+NET DIP_Switches_8Bits_TRI_I[5] LOC = "U8"  |  IOSTANDARD = "LVCMOS33";
+NET DIP_Switches_8Bits_TRI_I[6] LOC = "V8"  |  IOSTANDARD = "LVCMOS33";
+NET DIP_Switches_8Bits_TRI_I[7] LOC = "T5"  |  IOSTANDARD = "LVCMOS33";
+NET Push_Buttons_4Bits_TRI_I[0] LOC = "A8"  |  IOSTANDARD = "LVCMOS33";
+NET Push_Buttons_4Bits_TRI_I[1] LOC = "C4"  |  IOSTANDARD = "LVCMOS33";
+NET Push_Buttons_4Bits_TRI_I[2] LOC = "C9"  |  IOSTANDARD = "LVCMOS33";
+NET Push_Buttons_4Bits_TRI_I[3] LOC = "D9"  |  IOSTANDARD = "LVCMOS33";
+NET RESET_N LOC = "B8"  |  IOSTANDARD = "LVCMOS33";
+NET RS232_Uart_1_sin LOC = "N17"  |  IOSTANDARD = "LVCMOS33";
+NET RS232_Uart_1_sout LOC = "N18"  |  IOSTANDARD = "LVCMOS33";
+NET gclk LOC = "V10"  |  IOSTANDARD = "LVCMOS33";
+#
+# additional constraints
+#
+
+NET "GCLK" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;
+

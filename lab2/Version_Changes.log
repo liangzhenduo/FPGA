@@ -1,0 +1,12 @@
+ The following files will be modified:
+  system.mhs
+--------------------------------------
+ The following changes will be made:
+ Core axi_interconnect 1.02.a will be replaced by 1.06.a
+ Core microblaze 8.10.a will be replaced by 8.50.c
+ Core lmb_bram_if_cntlr 3.00.a will be replaced by 3.10.c
+ Core lmb_v10 2.00.a will be replaced by 2.00.b
+ Core clock_generator 4.01.a will be replaced by 4.03.a
+ Core mdm 2.00.b will be replaced by 2.10.a
+ Core axi_uartlite 1.01.a will be replaced by 1.02.a
+ Core axi_gpio 1.01.a will be replaced by 1.01.b

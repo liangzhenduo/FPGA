@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\FPGA\lab2\pcores\seg_ip_v1_00_a\devl\synthesis\seg_ip_xst.prj"
+-top seg_ip
+-p virtex6
+-ofn "C:\FPGA\lab2\pcores\seg_ip_v1_00_a\devl\synthesis\seg_ip_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib seg_ip_v1_00_a

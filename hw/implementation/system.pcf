@@ -1,0 +1,73 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Jun 13 17:00:59 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "GCLK" LOCATE = SITE "V10" LEVEL 1;
+COMP "seg_ip_0_SEG_pin<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg_ip_0_SEG_pin<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg_ip_0_SEG_pin<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg_ip_0_SEG_pin<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg_ip_0_SEG_pin<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg_ip_0_SEG_pin<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg_ip_0_SEG_pin<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "seg_ip_0_SEG_pin<7>" LOCATE = SITE "M13" LEVEL 1;
+COMP "seg_ip_0_SEG_pin<8>" LOCATE = SITE "N16" LEVEL 1;
+COMP "seg_ip_0_SEG_pin<9>" LOCATE = SITE "N15" LEVEL 1;
+COMP "RS232_Uart_1_sout" LOCATE = SITE "N18" LEVEL 1;
+COMP "seg_ip_0_SEG_pin<10>" LOCATE = SITE "P18" LEVEL 1;
+COMP "seg_ip_0_SEG_pin<11>" LOCATE = SITE "P17" LEVEL 1;
+COMP "RS232_Uart_1_sin" LOCATE = SITE "N17" LEVEL 1;
+COMP "Push_Buttons_4Bits_TRI_I<0>" LOCATE = SITE "A8" LEVEL 1;
+COMP "Push_Buttons_4Bits_TRI_I<1>" LOCATE = SITE "C4" LEVEL 1;
+COMP "Push_Buttons_4Bits_TRI_I<2>" LOCATE = SITE "C9" LEVEL 1;
+COMP "Push_Buttons_4Bits_TRI_I<3>" LOCATE = SITE "D9" LEVEL 1;
+COMP "DIP_Switches_8Bits_TRI_I<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "DIP_Switches_8Bits_TRI_I<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "DIP_Switches_8Bits_TRI_I<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "DIP_Switches_8Bits_TRI_I<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "DIP_Switches_8Bits_TRI_I<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "DIP_Switches_8Bits_TRI_I<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "DIP_Switches_8Bits_TRI_I<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "DIP_Switches_8Bits_TRI_I<7>" LOCATE = SITE "T5" LEVEL 1;
+COMP "RESET_N" LOCATE = SITE "B8" LEVEL 1;
+TIMEGRP microblaze_0_ilmb_POR_FF_I_dst = BEL
+        "microblaze_0_ilmb/microblaze_0_ilmb/POR_FF_I";
+TIMEGRP microblaze_0_dlmb_POR_FF_I_dst = BEL
+        "microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I";
+TIMEGRP axi4lite_0_reset_resync = BEL
+        "axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0"
+        BEL
+        "axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1"
+        BEL
+        "axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2"
+        BEL
+        "axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/m_axi_aresetn_resync_0"
+        BEL
+        "axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/m_axi_aresetn_resync_1"
+        BEL
+        "axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/m_axi_aresetn_resync_2"
+        BEL
+        "axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/s_axi_aresetn_resync_0"
+        BEL
+        "axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/s_axi_aresetn_resync_1"
+        BEL
+        "axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/s_axi_aresetn_resync_2";
+TIMEGRP microblaze_0_Reset_dst = BEL
+        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp";
+TIMEGRP axi4lite_0_reset_source = FFS(*) PADS(*);
+TIMEGRP "FFS" = FFS(*);
+PATH TS_TIG_microblaze_0_Reset_path = FROM TIMEGRP "FFS" TO TIMEGRP
+        "microblaze_0_Reset_dst";
+PATH "TS_TIG_microblaze_0_Reset_path" TIG;
+PATH TS_axi4lite_0_reset_resync_path = FROM TIMEGRP "axi4lite_0_reset_source"
+        TO TIMEGRP "axi4lite_0_reset_resync";
+PATH "TS_axi4lite_0_reset_resync_path" TIG;
+PATH TS_TIG_microblaze_0_dlmb_POR_FF_I_path = FROM TIMEGRP "FFS" TO TIMEGRP
+        "microblaze_0_dlmb_POR_FF_I_dst";
+PATH "TS_TIG_microblaze_0_dlmb_POR_FF_I_path" TIG;
+PATH TS_TIG_microblaze_0_ilmb_POR_FF_I_path = FROM TIMEGRP "FFS" TO TIMEGRP
+        "microblaze_0_ilmb_POR_FF_I_dst";
+PATH "TS_TIG_microblaze_0_ilmb_POR_FF_I_path" TIG;
+SCHEMATIC END;
+

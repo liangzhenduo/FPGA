@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          C:/FPGA/lab3/pcores/seg_ip_v1_00_a/data/seg_ip_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Mon Jun 13 15:35:27 2016 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib seg_ip_v1_00_a user_logic verilog
+lib seg_ip_v1_00_a seg_ip vhdl

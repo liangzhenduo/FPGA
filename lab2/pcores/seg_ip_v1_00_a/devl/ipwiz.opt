@@ -1,0 +1,10 @@
+-batch 
+-create seg_ip 
+-ver 1.00.a 
+-dir "C:\FPGA\lab2" 
+-lang verilog 
+-bus axi4lite s 
+-reg 2 
+-xps 
+-ise 
+-driver 

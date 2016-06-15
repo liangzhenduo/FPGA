@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: vga_640x480_picture_top.prj
 
@@ -112,12 +112,12 @@ Analyzing Verilog file "C:\FPGA\vga_640x480_picture\vga_initials.v" into library
 Parsing module <vga_initials>.
 Analyzing Verilog file "C:\FPGA\vga_640x480_picture\vga_640x480.v" into library work
 Parsing module <vga_640x480>.
-Analyzing Verilog file "C:\FPGA\vga_640x480_picture\ipcore_dir\loons240x160.v" into library work
-Parsing module <loons240x160>.
 Analyzing Verilog file "C:\FPGA\vga_640x480_picture\clkdiv.v" into library work
 Parsing module <clkdiv>.
 Analyzing Verilog file "C:\FPGA\vga_640x480_picture\vga_640x480_picture_top.v" into library work
 Parsing module <vga_640x480_picture_top>.
+Analyzing Verilog file "C:\FPGA\vga_640x480_picture\ipcore_dir\loons240x160.v" into library work
+Parsing module <loons240x160>.
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -597,7 +597,7 @@ clk            |    1.950|         |         |         |
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.78 secs
+Total CPU time to Xst completion: 10.07 secs
  
 --> 
 

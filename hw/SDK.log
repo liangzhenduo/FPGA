@@ -1,0 +1,16 @@
+17:03:04.135 INFO  - Processing command line option -hwspec C:\FPGA\hw\SDK\SDK_Export\hw\system.xml. 
+17:03:05.206 INFO  - Resetting C/C++ perspective as the workspace is found to be created before 14.3 
+17:03:06.442 INFO  - The hardware specification for project 'hw_platform_0' is different from C:\FPGA\hw\SDK\SDK_Export\hw\system.xml. 
+17:03:06.866 INFO  - Copied contents of C:\FPGA\hw\SDK\SDK_Export\hw\system.xml into \hw_platform_0\system.xml. 
+17:03:06.882 INFO  - Copied contents of C:\FPGA\hw\SDK\SDK_Export\hw\system.bit into \hw_platform_0\system.bit. 
+17:03:06.909 INFO  - Copied contents of C:\FPGA\hw\SDK\SDK_Export\hw\system_bd.bmm into \hw_platform_0\system_bd.bmm. 
+17:03:07.207 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+17:04:04.470 INFO  - Processing command line option -hwspec C:\FPGA\hw\SDK\SDK_Export\hw\system.xml. 
+17:04:05.162 INFO  - Resetting C/C++ perspective as the workspace is found to be created before 14.3 
+17:04:12.469 ERROR - Unable to read in MSS file C:\FPGA\hw\standalone_bsp_0\system.mss. 
+17:04:12.496 ERROR - Unable to read in MSS file C:\FPGA\hw\standalone_bsp_0\system.mss. 
+17:04:12.539 WARN  - Unable to determine location of documentation for OS . 
+17:04:12.552 ERROR - Unable to read in MSS file C:\FPGA\hw\standalone_bsp_0\system.mss. 
+17:04:12.577 ERROR - Unable to read in MSS file C:\FPGA\hw\standalone_bsp_0\system.mss. 
+17:04:24.877 ERROR - Unable to read in MSS file C:\FPGA\hw\standalone_bsp_0\system.mss. 
+17:05:12.947 ERROR - Unable to read in MSS file C:\FPGA\hw\standalone_bsp_0\system.mss. 
