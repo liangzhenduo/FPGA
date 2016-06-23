@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\FPGA\exam\vend.ncd
+OUTFILE=C:\FPGA\exam\vend.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\FPGA\exam
+LICENSE=WebPack
+USER_INFO=__0_0_0

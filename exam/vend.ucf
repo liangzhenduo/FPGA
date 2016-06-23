@@ -1,0 +1,16 @@
+NET "n" LOC = "U16";
+
+NET "c[0]" LOC = "T10";
+NET "c[1]" LOC = "T9";
+NET "c[2]" LOC = "V9";
+NET "c[3]" LOC = "M8";
+NET "c[4]" LOC = "N8";
+NET "c[5]" LOC = "U8";
+NET "c[6]" LOC = "V8";
+NET "c[7]" LOC = "T5";
+
+
+NET "clk"  LOC = "V10";
+//NET "rst"  LOC = "T5";
+NET "enb"  LOC = "C9";
+
