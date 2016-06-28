@@ -1,0 +1,6 @@
+08:36:01.513 INFO  - Resetting C/C++ perspective as the workspace is found to be created before 14.3 
+16:10:52.574 ERROR - Unable to read in MSS file C:\FPGA\Lab4\standalone_bsp_0\system.mss. 
+16:10:52.604 ERROR - Unable to read in MSS file C:\FPGA\Lab4\standalone_bsp_0\system.mss. 
+16:10:52.761 WARN  - Unable to determine location of documentation for OS . 
+16:10:52.766 ERROR - Unable to read in MSS file C:\FPGA\Lab4\standalone_bsp_0\system.mss. 
+16:10:52.795 ERROR - Unable to read in MSS file C:\FPGA\Lab4\standalone_bsp_0\system.mss. 

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-PD::  Mon Jun 13 14:51:22 2016
+DESKTOP-PD::  Tue Jun 28 16:02:06 2016
 
 par -w -intstyle ise -ol high -mt off vga_640x480_picture_top_map.ncd
 vga_640x480_picture_top.ncd vga_640x480_picture_top.pcf 
@@ -45,7 +45,7 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    57 out of   2,278    2%
+  Number of occupied Slices:                    55 out of   2,278    2%
   Number of MUXCYs used:                        80 out of   4,556    1%
   Number of LUT Flip Flop pairs used:          128
     Number with an unused Flip Flop:            91 out of     128   71%
@@ -93,19 +93,19 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 4 secs 
-Finished initial Timing Analysis.  REAL time: 4 secs 
+Starting initial Timing Analysis.  REAL time: 3 secs 
+Finished initial Timing Analysis.  REAL time: 3 secs 
 
 Starting Router
 
 
-Phase  1  : 2831 unrouted;      REAL time: 4 secs 
+Phase  1  : 2831 unrouted;      REAL time: 3 secs 
 
 Phase  2  : 845 unrouted;      REAL time: 4 secs 
 
-Phase  3  : 264 unrouted;      REAL time: 5 secs 
+Phase  3  : 291 unrouted;      REAL time: 4 secs 
 
-Phase  4  : 264 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  4  : 291 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
 Updating file: vga_640x480_picture_top.ncd with current fully routed design.
 
@@ -141,8 +141,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net U1/ | SETUP       |         N/A|     9.775ns|     N/A|           0
-  counter_1_BUFG                            | HOLD        |     0.534ns|            |       0|           0
+  Autotimespec constraint for clock net U1/ | SETUP       |         N/A|    10.305ns|     N/A|           0
+  counter_1_BUFG                            | HOLD        |     0.555ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.234ns|     N/A|           0
   _BUFGP                                    | HOLD        |     0.456ns|            |       0|           0
@@ -161,10 +161,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 7 secs 
+Total REAL time to PAR completion: 6 secs 
 Total CPU time to PAR completion: 6 secs 
 
-Peak Memory Usage:  443 MB
+Peak Memory Usage:  445 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

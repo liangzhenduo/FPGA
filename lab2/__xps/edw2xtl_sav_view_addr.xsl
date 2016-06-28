@@ -31,7 +31,7 @@
 
 <xsl:template name="WRITE_VIEW_ADDRESS">
               
-    <xsl:for-each select="$G_SYS_MODS/MODULE[((@MODCLASS = 'PROCESSOR') and (MEMORYMAP/MEMRANGE[((not(@IS_VALID) or (@IS_VALID = 'TRUE')) and (ACCESSROUTE or (@IS_CONSTANT = 'TRUE')))]))]">
+    <xsl:for-each select="$G_SYS_MODS/MODULE[((@MODCLASS = 'PROCESSOR') and (MEMORYMAP/MEMRANGE[((not(@IS_VALID) or (@IS_VALID = 'TRUE')) and ACCESSROUTE)]))]">
         <xsl:sort data-type="number" select="@ROW_INDEX" order="ascending"/>
             
         <xsl:variable name="procInst_"     select="@INSTANCE"/>
@@ -57,7 +57,7 @@
 				<xsl:attribute name="VIEWTYPE">STATIC</xsl:attribute>
 			</xsl:element>
             
-            <xsl:for-each select="$procMod_/MEMORYMAP/MEMRANGE[((not(@IS_VALID) or (@IS_VALID = 'TRUE')) and (ACCESSROUTE or (@MEMTYPE = 'BRIDGE') or (@IS_CONSTANT = 'TRUE')))]">
+            <xsl:for-each select="$procMod_/MEMORYMAP/MEMRANGE[((not(@IS_VALID) or (@IS_VALID = 'TRUE')) and (ACCESSROUTE or (@MEMTYPE = 'BRIDGE')))]">
                 <xsl:sort data-type="number" select="@BASEDECIMAL" order="ascending"/>
                 
                 <xsl:variable name="addr_id_"><xsl:value-of select="@BASENAME"/>:<xsl:value-of select="@HIGHNAME"/></xsl:variable>
@@ -124,11 +124,6 @@
                        <xsl:if test="not(@IS_LOCKED) or not(@IS_LOCKED = 'TRUE')">FALSE</xsl:if>
                    </xsl:variable>
 
-                   <xsl:variable name="is_constant_">
-                       <xsl:if test="@IS_CONSTANT = 'TRUE'">TRUE</xsl:if>
-                       <xsl:if test="not(@IS_CONSTANT) or not(@IS_CONSTANT = 'TRUE')">FALSE</xsl:if>
-                   </xsl:variable>
-                   
                    <xsl:variable name="baseAddrViewType_">
 						<xsl:choose>
 							<xsl:when test="$is_locked_='TRUE'">STATIC</xsl:when>
@@ -234,7 +229,6 @@
 		                    <xsl:when test="string-length($valid_bifNames_) &lt; 1">
 		                        <xsl:choose>
 		                            <xsl:when test="$periModClass_ = 'BUS'">Not Applicable</xsl:when>
-		                            <xsl:when test="$is_constant_ = 'TRUE'"></xsl:when>
 		                            <xsl:otherwise>Not Connected</xsl:otherwise>
 		                        </xsl:choose>
 		                    </xsl:when>
@@ -264,7 +258,7 @@
         -->
         <NONPROCADDRESS INSTANCE="__DUMMY__" BASENAME="__DUMMY__" HIGHNAME="__DUMMY__" BASEDECIMAL="__DUMMY__"/>
          
-        <xsl:for-each select="$G_SYS_MODS/MODULE[(not(@MODCLASS = 'PROCESSOR') and (MEMORYMAP/MEMRANGE[((not(@IS_VALID) or (@IS_VALID = 'TRUE')) and (ACCESSROUTE or (@IS_CONSTANT = 'TRUE')))]))]">
+        <xsl:for-each select="$G_SYS_MODS/MODULE[(not(@MODCLASS = 'PROCESSOR') and (MEMORYMAP/MEMRANGE[((not(@IS_VALID) or (@IS_VALID = 'TRUE')) and ACCESSROUTE)]))]">
             <xsl:variable name="nonProcInst_" select="@INSTANCE"/>
         
             <xsl:for-each select="MEMORYMAP/MEMRANGE[(not(@IS_VALID) or (@IS_VALID = 'TRUE'))]">
@@ -477,7 +471,7 @@
 
 <!--
 -->                
-    <xsl:for-each select="$G_SYS_MODS/MODULE[((@MODCLASS = 'PROCESSOR') and (MEMORYMAP/MEMRANGE[((not(@IS_VALID) or (@IS_VALID = 'TRUE')) and (ACCESSROUTE or (@IS_CONSTANT = 'TRUE')))]))]">
+    <xsl:for-each select="$G_SYS_MODS/MODULE[((@MODCLASS = 'PROCESSOR') and (MEMORYMAP/MEMRANGE[((not(@IS_VALID) or (@IS_VALID = 'TRUE')) and ACCESSROUTE)]))]">
         <xsl:sort data-type="number" select="@ROW_INDEX" order="ascending"/>
             
         <xsl:variable name="procInst_" select="@INSTANCE"/>
@@ -491,7 +485,7 @@
         
             <VARIABLE VIEWTYPE="STATIC" VIEWDISP="Instance" NAME="INSTANCE"  VALUE="{$procInstHdrVal_}"/>
             
-            <xsl:for-each select="$modInstance_/MEMORYMAP/MEMRANGE[((not(@IS_VALID) or (@IS_VALID = 'TRUE')) and (ACCESSROUTE or (@MEMTYPE = 'BRIDGE') or (@IS_CONSTANT = 'TRUE')))]">
+            <xsl:for-each select="$modInstance_/MEMORYMAP/MEMRANGE[((not(@IS_VALID) or (@IS_VALID = 'TRUE')) and (ACCESSROUTE or (@MEMTYPE = 'BRIDGE')))]">
                 <xsl:sort data-type="number" select="@BASEDECIMAL" order="ascending"/>
                 
                 <xsl:variable name="addr_id_"><xsl:value-of select="@BASENAME"/>:<xsl:value-of select="@HIGHNAME"/></xsl:variable>
@@ -688,7 +682,7 @@
         -->
         <NONPROCADDRESS INSTANCE="__DUMMY__" BASENAME="__DUMMY__" HIGHNAME="__DUMMY__" BASEDECIMAL="__DUMMY__"/>
          
-        <xsl:for-each select="$G_SYS_MODS/MODULE[(not(@MODCLASS = 'PROCESSOR') and (MEMORYMAP/MEMRANGE[((not(@IS_VALID) or (@IS_VALID = 'TRUE')) and (ACCESSROUTE or (@IS_CONSTANT = 'TRUE')))]))]">
+        <xsl:for-each select="$G_SYS_MODS/MODULE[(not(@MODCLASS = 'PROCESSOR') and (MEMORYMAP/MEMRANGE[((not(@IS_VALID) or (@IS_VALID = 'TRUE')) and ACCESSROUTE)]))]">
             <xsl:variable name="nonProcInst_" select="@INSTANCE"/>
         
             <xsl:for-each select="MEMORYMAP/MEMRANGE[(not(@IS_VALID) or (@IS_VALID = 'TRUE'))]">

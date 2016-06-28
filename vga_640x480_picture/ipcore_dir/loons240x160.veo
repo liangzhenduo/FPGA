@@ -45,19 +45,15 @@
 *     THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS                 *
 *     PART OF THIS FILE AT ALL TIMES.                                          *
 *******************************************************************************/
-
-//  Generated from component ID: xilinx.com:ip:blk_mem_gen:4.3
-
-
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
 // (in parentheses) to your own signal names.
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 loons240x160 YourInstanceName (
-	.clka(clka), // input clka
-	.addra(addra), // input [15 : 0] addra
-	.douta(douta)); // output [7 : 0] douta
+	.clka(clka),
+	.addra(addra), // Bus [15 : 0] 
+	.douta(douta)); // Bus [7 : 0] 
 
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

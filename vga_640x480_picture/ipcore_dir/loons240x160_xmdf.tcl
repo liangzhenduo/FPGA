@@ -14,7 +14,7 @@ namespace eval ::loons240x160_xmdf {
 # Optional when the use context does not require the param or ports
 # arrays to be available.
 proc ::loons240x160_xmdf::xmdfInit { instance } {
-# Variable containing name of library into which module is compiled
+# Variable containg name of library into which module is compiled
 # Recommendation: <module_name>
 # Required
 utilities_xmdf::xmdfSetData $instance Module Attributes Name loons240x160
@@ -30,7 +30,8 @@ set fcount 0
 # Examples include unisim and xilinxcorelib
 # Optional
 # In this example, we assume that the unisim library will
-# be available to the simulation and synthesis tool
+# be magically
+# available to the simulation and synthesis tool
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type logical_library
 utilities_xmdf::xmdfSetData $instance FileSet $fcount logical_library unisim
 incr fcount
@@ -65,6 +66,14 @@ incr fcount
 
 utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path loons240x160.veo
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type verilog_template
+incr fcount
+
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path loons240x160.vhd
+utilities_xmdf::xmdfSetData $instance FileSet $fcount type vhdl
+incr fcount
+
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path loons240x160.vho
+utilities_xmdf::xmdfSetData $instance FileSet $fcount type vhdl_template
 incr fcount
 
 utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path loons240x160.xco

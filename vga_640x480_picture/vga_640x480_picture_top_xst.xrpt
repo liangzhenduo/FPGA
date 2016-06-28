@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Mon Jun 13 14:50:48 2016">
+  <application stringID="Xst" timeStamp="Tue Jun 28 16:01:28 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -156,16 +156,17 @@
         <item stringID="XST_TOP_LEVEL_OUTPUT_FILE_NAME" value="vga_640x480_picture_top.ngc"/>
       </section>
       <section stringID="XST_PRIMITIVE_AND_BLACK_BOX_USAGE">
-        <item dataType="int" stringID="XST_BELS" value="258">
+        <item dataType="int" stringID="XST_BELS" value="266">
           <item dataType="int" stringID="XST_GND" value="2"/>
           <item dataType="int" stringID="XST_INV" value="3"/>
           <item dataType="int" stringID="XST_LUT1" value="5"/>
           <item dataType="int" stringID="XST_LUT2" value="14"/>
-          <item dataType="int" stringID="XST_LUT3" value="38"/>
-          <item dataType="int" stringID="XST_LUT4" value="31"/>
+          <item dataType="int" stringID="XST_LUT3" value="46"/>
+          <item dataType="int" stringID="XST_LUT4" value="23"/>
           <item dataType="int" stringID="XST_LUT5" value="18"/>
           <item dataType="int" stringID="XST_LUT6" value="38"/>
           <item dataType="int" stringID="XST_MUXCY" value="50"/>
+          <item dataType="int" stringID="XST_MUXF7" value="8"/>
           <item dataType="int" stringID="XST_VCC" value="1"/>
           <item dataType="int" stringID="XST_XORCY" value="58"/>
         </item>

@@ -12,26 +12,5 @@
    (Coe_File,.\loons240x160.coe) during Recustomization.
 </msg>
 
-<msg type="error" file="coreutil" num="0" delta="new" >ERROR:sim - Unable to find .\snow.coe
-   Coregen is looking for C:\FPGA\vga_640x480_picture\ipcore_dir\snow.coe
-</msg>
-
-<msg type="error" file="coreutil" num="0" delta="new" >ERROR:sim - Unable to find C:.\FPGA\vga_640x480_picture\snow.coe
-   Coregen is looking for
-   C:\FPGA\vga_640x480_picture\ipcore_dir\FPGA\vga_640x480_picture\snow.coe
-</msg>
-
-<msg type="warning" file="sim" num="89" delta="new" >A core named &lt;<arg fmt="%s" index="1">loons240x160</arg>&gt; already exists in the output directory. Output products for this core may be overwritten.
-</msg>
-
-<msg type="warning" file="sim" num="192" delta="new" >Xco Parameter changed from (<arg fmt="%s" index="1">Coe_File</arg>,<arg fmt="%s" index="2">./snowhalation.coe</arg>) to (<arg fmt="%s" index="3">Coe_File</arg>,<arg fmt="%s" index="4">.\snowhalation.coe</arg>) during Recustomization.
-</msg>
-
-<msg type="info" file="sim" num="949" delta="new" >Finished generation of ASY schematic symbol.
-</msg>
-
-<msg type="info" file="sim" num="948" delta="new" >Finished FLIST file generation.
-</msg>
-
 </messages>
 

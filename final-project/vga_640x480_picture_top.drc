@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Wed Jun 29 00:12:57 2016
+
+drc -z vga_640x480_picture_top.ncd vga_640x480_picture_top.pcf
+
+DRC detected 0 errors and 0 warnings.

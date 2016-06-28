@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: vga_640x480_picture_top.prj
 
@@ -112,12 +112,12 @@ Analyzing Verilog file "C:\FPGA\vga_640x480_picture\vga_initials.v" into library
 Parsing module <vga_initials>.
 Analyzing Verilog file "C:\FPGA\vga_640x480_picture\vga_640x480.v" into library work
 Parsing module <vga_640x480>.
+Analyzing Verilog file "C:\FPGA\vga_640x480_picture\ipcore_dir\loons240x160.v" into library work
+Parsing module <loons240x160>.
 Analyzing Verilog file "C:\FPGA\vga_640x480_picture\clkdiv.v" into library work
 Parsing module <clkdiv>.
 Analyzing Verilog file "C:\FPGA\vga_640x480_picture\vga_640x480_picture_top.v" into library work
 Parsing module <vga_640x480_picture_top>.
-Analyzing Verilog file "C:\FPGA\vga_640x480_picture\ipcore_dir\loons240x160.v" into library work
-Parsing module <loons240x160>.
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -325,16 +325,17 @@ Top Level Output File Name         : vga_640x480_picture_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 258
+# BELS                             : 266
 #      GND                         : 2
 #      INV                         : 3
 #      LUT1                        : 5
 #      LUT2                        : 14
-#      LUT3                        : 38
-#      LUT4                        : 31
+#      LUT3                        : 46
+#      LUT4                        : 23
 #      LUT5                        : 18
 #      LUT6                        : 38
 #      MUXCY                       : 50
+#      MUXF7                       : 8
 #      VCC                         : 1
 #      XORCY                       : 58
 # FlipFlops/Latches                : 28
@@ -528,7 +529,7 @@ Offset:              8.772ns (Levels of Logic = 12)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/counter_1'
-  Total number of paths / destination ports: 774 / 10
+  Total number of paths / destination ports: 782 / 10
 -------------------------------------------------------------------------
 Offset:              8.992ns (Levels of Logic = 6)
   Source:            U2/hc_2 (FF)
@@ -596,12 +597,12 @@ clk            |    1.950|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.07 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.38 secs
  
 --> 
 
-Total memory usage is 295172 kilobytes
+Total memory usage is 294600 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    5 (   0 filtered)
