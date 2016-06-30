@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (nt)
+Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
-3 -fastpaths -xml vga_640x480_picture_top.twx vga_640x480_picture_top.ncd -o
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml vga_640x480_picture_top.twx vga_640x480_picture_top.ncd -o
 vga_640x480_picture_top.twr vga_640x480_picture_top.pcf -ucf
 vga_640x480_picture.ucf
 
@@ -120,14 +120,14 @@ sw<7>          |red<2>         |   12.321|
 ---------------+---------------+---------+
 
 
-Analysis completed Wed Jun 29 00:12:48 2016 
+Analysis completed Thu Jun 30 14:01:14 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 174 MB
+Peak Memory Usage: 227 MB
 
 
 
